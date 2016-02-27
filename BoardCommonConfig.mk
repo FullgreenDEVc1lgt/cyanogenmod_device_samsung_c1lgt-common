@@ -72,7 +72,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
 
 # Graphics
-BOARD_EGL_CFG := device/samsung/c1skt-common/configs/egl.cfg
+BOARD_EGL_CFG := device/samsung/c1lgt-common/configs/egl.cfg
 BOARD_EGL_NEEDS_HANDLE_VALUE := true
 USE_OPENGL_RENDERER := true
 BOARD_USES_SKIAHWJPEG := true
@@ -141,14 +141,14 @@ BOARD_HAVE_SAMSUNG_WIFI          := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_HAVE_SAMSUNG_BLUETOOTH := true
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/c1skt-common/bluetooth/vnd_smdk4x12.txt
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/c1lgt-common/bluetooth/vnd_smdk4x12.txt
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/s3c-usbgadget/gadget/lun%d/file"
 
 # Recovery
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/c1skt-common/recovery/recovery_keys.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/c1skt-common/recovery/graphics.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/c1lgt-common/recovery/recovery_keys.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/c1lgt-common/recovery/graphics.c
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun0/file"
 BOARD_USES_MMCUTILS := true
@@ -157,7 +157,7 @@ BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/samsung/c1skt-common/selinux
+BOARD_SEPOLICY_DIRS += device/samsung/c1lgt-common/selinux
 
 # Charging mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
@@ -175,4 +175,4 @@ BOARD_HAL_STATIC_LIBRARIES := libhealthd.exynos4
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 
 # inherit from the proprietary version
--include vendor/samsung/c1skt-common/BoardConfigVendor.mk
+-include vendor/samsung/c1lgt-common/BoardConfigVendor.mk
